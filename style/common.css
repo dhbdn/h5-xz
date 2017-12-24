@@ -1,0 +1,188 @@
+html {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    /*谷歌浏览器字体最小字体12px*/
+    -webkit-text-size-adjust: 100%;
+    /*100%/none 关闭字体大小自动调整功能*/
+    /*a标签及拥有 :active伪类的元素有默认的高亮框*/
+    -webkit-tap-hightlight-color: transparent;
+    /*禁止文本被选中*/
+    -webkit-user-select: none;
+}
+
+body {
+    overflow-x: hidden;
+    /*开启moblie网页快速滚动和回弹的效果*/
+    -webkit-overflow-scrolling: touch;
+    font-size: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    width: 100%;
+    color: #333;
+    text-decoration: none;
+}
+
+.line,
+.topLine {
+    position: relative;
+}
+
+.line:after,
+.topLine:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.line:after {
+    width: 1px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    -webkit-transform: scaleX(0.5);
+    -moz-transform: scaleX(0.5);
+    -ms-transform: scaleX(0.5);
+    -o-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+
+.topLine:after {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #ddd;
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input {
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+
+li,
+ol {
+    list-style: none;
+}
+
+.vertical-view {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.horizontal-view {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.space {
+    width: 10rem;
+    height: 0.156rem;
+    background: #eee;
+}
+
+.ell {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    /* IE9*/
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../iconfont/iconfont.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* flex 布局0 */
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*定位*/
+
+.pos-r {
+    position: relative;
+}
+
+.pos-a {
+    position: absolute;
+}
+
+.pos-a-center,
+.pos-r-center {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

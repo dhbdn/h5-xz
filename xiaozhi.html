@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimum-scale=1.0">
+    <title>app</title>
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--头部-->
+    <header>
+        <!--头像和昵称-->
+        <div class="row pos-r">
+            <a href="http://www.hbbaly.com/2017/09/20/flex-%E5%B8%83%E5%B1%80/">
+                <img src="images/avator.png" class="avator" alt="avator">
+                <text class="name">1111</text>
+            </a>
+            <!--消息通知-->
+            <a href="">
+                <img class="notice pos-a" src="images/index/notice.png" alt="notice">
+            </a>
+        </div>
+    </header>
+    <main>
+        <!--轮播-->
+        <div class="swiper-container">
+            <ul class="swiper-wrapper horizontal-view">
+                <li class="swiper-slide">
+                    <img src="images/index/1.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                    <img src="images/index/2.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+<script src="https://cdn.bootcss.com/Swiper/4.0.7/js/swiper.js"></script>
+
+<script>
+    var mySwiper = new Swiper(".swiper-container", {
+        direction: 'horizontal',
+        autoplay: true,
+        loop: true,
+        setWrapperSize: true,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+</script>
+
+</html>
